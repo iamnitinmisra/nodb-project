@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+        "description": "UFO Bottle",
+        "image": "https://cdn.shopify.com/s/files/1/0182/4159/products/TasteofSpace_Mens_Tee_Front_600x.jpg?v=1554424836",
+        "price": "10",
+        "category": "tshirt",
+        "brand": "Into The AM",
+        "qty": 1
+    },
+    {
+        "id": 2,
+        "description": "Astro Shaka",
+        "image": "https://cdn.shopify.com/s/files/1/0182/4159/products/UniversalLove_Mens_Tee_Front_600x.jpg?v=1561562442",
+        "price": "11",
+        "category": "tshirt",
+        "brand": "Into The AM",
+        "qty": 1
+    },
+    {
+        "id": 3,
+        "description": "Universal Tree",
+        "image": "https://cdn.shopify.com/s/files/1/0182/4159/products/Pathfinder_Mens_Tee_Front_600x.jpg?v=1551384427",
+        "price": "12",
+        "category": "tshirt",
+        "brand": "Into The AM",
+        "qty": 1 
+    },
+    {
+        "id": 4,
+        "description": "Spray Aurora",
+        "image": "https://cdn.shopify.com/s/files/1/0182/4159/products/SpaceVandal_Bright_600x.jpg?v=1539132196",
+        "price": "13",
+        "category": "tshirt",
+        "brand": "Into The AM",
+        "qty": 1
+    }
+    
+]
