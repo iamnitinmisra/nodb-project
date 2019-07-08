@@ -1,0 +1,32 @@
+form.addToStoreForm {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20vh;
+    color: white;
+    height: 100%;
+    width: 100%;
+    /* display: flex; */
+    flex-wrap: wrap;
+}
+
+button.addProduct-button {
+    width: 7vw;
+    justify-content: center;
+    /* font: white; */
+    margin: 0px auto;
+}
+input {
+    margin-right: 7px;
+    width: 10vw;
+    justify-content: center;
+    /* font: white; */
+    margin-top: 2px;
+    margin: 0 auto;
+}
+
+h2 {
+    /* font: white; */
+    margin-bottom: 5vh;
+}
+

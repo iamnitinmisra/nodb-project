@@ -1,0 +1,39 @@
+.menu-container {
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    color: white;
+    font-family: 'Space Mono', monospace;
+}
+
+.logo-container {
+    width: 35vw;
+    /* align-items: center; */
+}
+
+.navigation-container{
+    display: flex;
+    align-items: center;
+    width: 70vw;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0;
+
+} 
+
+li {
+    /* width: 10vw; */
+    margin-right: 10px;
+    justify-content: flex-end;
+}
+
+img.logo {
+    height: 12%;
+    width: 12%;
+    border: none;
+}
+

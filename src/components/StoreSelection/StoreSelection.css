@@ -1,0 +1,54 @@
+main {
+    background-color:  black;
+    /* background-image: url("/../orion-nebula-11107_960_720.jpg"); */
+    width: 35%;
+    height: 35%;
+    font-family: 'Space Mono', monospace;
+
+    /* width: 50vw; */
+    /* box-sizing: border-box; */
+    /* display: inline-flex; */
+}
+
+img {
+    border: 2px solid;
+    /* border-top-width: 0px; */
+    border-color: grey;
+    /* width: 40vh; */
+    max-height: 50vh;
+    max-width: 50vw;
+    /* display: flex; */
+    /* flex-direction: row; */
+}
+
+div.product-container {
+    /* position: relative; */
+    color: white;
+    margin: 10px;
+    /* border: 10px solid; */
+    /* border-color: ; */
+    margin: none;
+    width: 330px;
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    /* width: 25%; */
+}
+
+div.price-container {
+    display: inline-flex;
+    justify-content: center;
+    color: white;
+}
+
+.mappedProducts {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+

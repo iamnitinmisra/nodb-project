@@ -3,12 +3,16 @@ import "./App.css";
 import axios from "axios";
 import StoreSelection from "./components/StoreSelection/StoreSelection";
 import AddToStore from "./components/AddToStore/AddToStore";
+import MenuBar from "./components/MenuBar/MenuBar"
+import Heading from "./components/Heading/Heading"
+import "./index.css"
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       products: [],
+      cart: [],
       id: 0,
       description: "",
       image: "",
@@ -43,38 +47,38 @@ class App extends Component {
       category: this.state.category,
       brand: this.state.brand,
       alt: this.state.alt
-    }
+    };
     axios
       .post("/api/products", newProduct)
       .then(response => {
         this.setState({
           products: response.data
-        })
+        });
       })
-      .catch(err => console.log(err))
-  }
+      .catch(err => console.log(err));
+  };
 
   updatePrice = (id, match) => {
     axios
-    .put(`/api/products/${id}?match=${match}`)
-    .then(response => {
-      this.setState({
-        products: response.data
+      .put(`/api/products/${id}?match=${match}`)
+      .then(response => {
+        this.setState({
+          products: response.data
+        });
       })
-    })
-    .catch(err => console.log(err))
-  }
+      .catch(err => console.log(err));
+  };
 
-  deleteProduct = (id)=>{
+  deleteProduct = (id) => {
     axios
-    .delete(`/api/products/${id}`)
-    .then(response => {
-      this.setState({
-        products: response.data
+      .delete(`/api/products/${id}`)
+      .then(response => {
+        this.setState({
+          products: response.data
+        });
       })
-    })
-    .catch(err => console.log(err))
-  }
+      .catch(err => console.log(err));
+  };
 
   universalChangeHandler = (property, value) => {
     this.setState({
@@ -87,17 +91,26 @@ class App extends Component {
     // console.log(products)
     return (
       <div className="App">
-        <StoreSelection 
-          products={products} 
-          updatePrice={this.updatePrice}
-          deleteProduct={this.deleteProduct}
+        <Heading 
         />
-        <AddToStore
+        <div className="navigation">
+          <MenuBar 
+          />
+        </div>
+        <div className="store-container">
+          <StoreSelection
+            products={products}
+            updatePrice={this.updatePrice}
+            deleteProduct={this.deleteProduct}
+          />
+        </div>
+        <div className="new-clothes">
+        <AddToStore 
           universalChangeHandler={this.universalChangeHandler}
           state={this.state}
           postNewProduct={this.postNewProduct}
         />
-        
+        </div>
       </div>
     );
   }

@@ -2,11 +2,13 @@ import React from "react";
 import "./AddToStore.css";
 
 export default function addToStore(props) {
-  const { description, image, price, category, brand, /*alt */} = props.state;
+  const { description, image, price/*, category, brand, alt */} = props.state;
     // console.log(props.state.products);
     // console.log(description);
     return (
       <div className="input-container">
+        <form className = "addToStoreForm">
+          <h2>Create new product</h2>
         <input
           onChange={event =>
             props.universalChangeHandler(event.target.name, event.target.value)
@@ -31,22 +33,22 @@ export default function addToStore(props) {
           name="price"
           placeholder="Price"
         />
-        <input
+        {/* <input
           onChange={event =>
             props.universalChangeHandler(event.target.name, event.target.value)
           }
           value={category}
           name="category"
           placeholder="Category"
-        />
-        <input
+        /> */}
+        {/* <input
           onChange={event =>
             props.universalChangeHandler(event.target.name, event.target.value)
           }
           value={brand}
           name="brand"
           placeholder="Brand"
-        />
+        /> */}
         {/* <input
           onChange={event =>
             props.universalChangeHandler(event.target.name, event.target.value)
@@ -56,7 +58,8 @@ export default function addToStore(props) {
           placeholder="Alt Image Text"
         /> */}
 
-        <button onClick={() => props.postNewProduct()}>Add Product</button>
+        <button className="addProduct-button" onClick={() => props.postNewProduct()}>Add Product</button>
+        </form>
       </div>
     );
 
