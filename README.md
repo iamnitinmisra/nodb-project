@@ -24,8 +24,8 @@
             - Display store
         - Navigation.js 
             - Navigation menu for cart and store
-        - Newsletter.js
-            - enter email to sign up to receive notifications on deals
+        - AddToStore.js
+            - component to add garments to the stores product selction
 
 ## backend checklist
 

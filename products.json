@@ -6,7 +6,9 @@
         "price": "10",
         "category": "tshirt",
         "brand": "Into The AM",
-        "qty": 1
+        "qty": 0,
+        "alt": "Black T with a UFO inside of a Bottle"
+        
     },
     {
         "id": 2,
@@ -15,7 +17,8 @@
         "price": "11",
         "category": "tshirt",
         "brand": "Into The AM",
-        "qty": 1
+        "qty": 0,
+        "alt": "Black T with an astronaut signing Shaka"
     },
     {
         "id": 3,
@@ -24,7 +27,8 @@
         "price": "12",
         "category": "tshirt",
         "brand": "Into The AM",
-        "qty": 1 
+        "qty": 0,
+        "alt": "Black T with space shuttle orbitting a tree"
     },
     {
         "id": 4,
@@ -33,7 +37,8 @@
         "price": "13",
         "category": "tshirt",
         "brand": "Into The AM",
-        "qty": 1
+        "qty": 0,
+        "alt": "Black T with anstronaut spray painting an aurora"
     }
     
 ]
