@@ -58,7 +58,7 @@ export default function addToStore(props) {
           placeholder="Alt Image Text"
         /> */}
 
-        <button className="addProduct-button" onClick={() => props.postNewProduct()}>Add Product</button>
+        <button className="addProduct-button" onClick={() => props.postNewProduct()}>Add</button>
         </form>
       </div>
     );
